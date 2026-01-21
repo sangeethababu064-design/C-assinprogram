@@ -1,0 +1,9 @@
+#include <iostream>
+Using namespace std;
+
+Int main() {
+    Float p, r, t;
+    Cin >> p >> r >> t;
+    Cout << (p * r * t) / 100;
+    Return 0;
+}
