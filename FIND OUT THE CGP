@@ -1,0 +1,21 @@
+#include <iostream>
+Using namespace std;
+
+Int main() {
+    Int subjects;
+    Float marks, total = 0;
+
+    Cout << “Enter number of subjects: “;
+    Cin >> subjects;
+
+    For (int I = 0; I < subjects; i++) {
+        Cin >> marks;   // enter marks
+        Total += marks;
+    }
+
+    Float cgpa = (total / subjects) / 9.5;
+
+    Cout << “CGPA = “ << cgpa << endl;
+
+    Return 0;
+}
