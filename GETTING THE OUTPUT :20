@@ -1,0 +1,8 @@
+#include <iostream>
+Using namespace std;
+
+Int main() {
+    Int j = 20;
+    Cout << j;
+    Return 0;
+}
