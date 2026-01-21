@@ -1,0 +1,9 @@
+GETTING INPUT FROM USER AND PRINTING THE OUTPUT:
+#include<iostream>
+Using namespace std;
+Int main() {
+    String name;
+    Getline(cin, name);
+    Cout << “My name is “ << name;
+    Return 0;
+}
