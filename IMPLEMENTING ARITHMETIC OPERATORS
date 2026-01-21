@@ -1,0 +1,24 @@
+#include <iostream>
+Using namespace std;
+
+Int main() {
+    Int a, b;
+
+    Cout << “Enter first number: “;
+    Cin >> a;
+
+    Cout << “Enter second number: “;
+    Cin >> b;
+
+    Cout << “Addition = “ << a + b << endl;
+    Cout << “Subtraction = “ << a – b << endl;
+    Cout << “Multiplication = “ << a * b << endl;
+
+    If (b != 0) {
+        Cout << “Division = “ << a / b << endl;
+    } else {
+        Cout << “Division = Not possible (division by zero)” << endl;
+    }
+
+    Return 0;
+}
