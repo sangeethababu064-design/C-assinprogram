@@ -1,0 +1,23 @@
+CONDITIONAL STATEMENT:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int year, month, day;
+
+    cout << "Enter Year: ";
+    cin >> year;
+
+    cout << "Enter Month: ";
+    cin >> month;
+
+    cout << "Enter Day: ";
+    cin >> day;
+
+    if (year > 0 && month >= 1 && month <= 12 && day >= 1 && day <= 31)
+        cout << "Date is Valid";
+    else
+        cout << "Date is Invalid";
+
+    return 0;
+}
