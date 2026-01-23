@@ -1,0 +1,64 @@
+STL CONTAINERS:
+#include <iostream>
+#include <vector>
+#include <list>
+#include <stack>
+#include <queue>
+#include <map>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+
+    // VECTOR
+    vector<int> v = {40, 10, 30, 20};
+    cout << "Vector elements: ";
+    for (auto i : v)
+        cout << i << " ";
+    cout << endl;
+
+    // ALGORITHM - sort
+    sort(v.begin(), v.end());
+    cout << "Sorted Vector: ";
+    for (auto i : v)
+        cout << i << " ";
+    cout << endl;
+
+    // LIST
+    list<string> names = {"Ravi", "Anu", "Kumar"};
+    cout << "\nList elements: ";
+    for (string s : names)
+        cout << s << " ";
+
+    // STACK
+    stack<int> s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    cout << "\n\nStack top element: " << s.top();
+
+    // QUEUE
+    queue<int> q;
+    q.push(1);
+    q.push(2);
+    q.push(3);
+    cout << "\nQueue front element: " << q.front();
+
+    // MAP
+    map<int, string> students;
+    students[1] = "Muthu";
+    students[2] = "Babu";
+
+    cout << "\n\nMap elements:\n";
+    for (auto it = students.begin(); it != students.end(); it++)
+        cout << it->first << " -> " << it->second << endl;
+
+    // ALGORITHM - find
+    if (find(v.begin(), v.end(), 20) != v.end())
+        cout << "\n20 found in vector";
+    else
+        cout << "\n20 not found in vector";
+
+    return 0;
+}
