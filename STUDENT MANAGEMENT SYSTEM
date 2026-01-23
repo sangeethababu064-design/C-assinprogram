@@ -1,0 +1,37 @@
+STUDENT MANAGEMENT SYSTEM:
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string name;
+    int rollNo;
+    float marks;
+
+    // Input student details
+    cout << "Enter student name: ";
+    cin >> name;
+    cout << "Enter roll number: ";
+    cin >> rollNo;
+    cout << "Enter marks: ";
+    cin >> marks;
+
+    // Display student details
+    cout << "\n--- Student Details ---\n";
+    cout << "Name: " << name << endl;
+    cout << "Roll No: " << rollNo << endl;
+    cout << "Marks: " << marks << endl;
+
+    // Search student by roll number
+    int searchRoll;
+    cout << "\nEnter roll number to search: ";
+    cin >> searchRoll;
+
+    if(searchRoll == rollNo) {
+        cout << "Student Found: " << name << ", Marks: " << marks << endl;
+    } else {
+        cout << "Student not found.\n";
+    }
+
+    return 0;
+}
