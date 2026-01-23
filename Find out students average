@@ -1,0 +1,17 @@
+CALCULATE A STUDENTS AVERAGE:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    int avg;
+
+    cout << "Enter 3 marks: ";
+    cin >> a >> b >> c;
+
+    avg = (a + b + c) / 3;
+
+    cout << "Average = " << avg;
+
+    return 0;
+}
