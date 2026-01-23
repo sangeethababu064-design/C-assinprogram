@@ -1,0 +1,20 @@
+QUIZ GAME:
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ans;
+
+    cout << "=== MINI QUIZ GAME ===\n";
+    cout << "Question: Sun rises in the East.\n";
+    cout << "T - True\nF - False\n";
+    cout << "Enter your answer: ";
+    cin >> ans;
+
+    if (ans == 'T' || ans == 't')
+        cout << "Correct Answer!";
+    else
+        cout << "Wrong Answer!";
+
+    return 0;
+}
