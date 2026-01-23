@@ -1,0 +1,38 @@
+OOPS CONCEPTS CLASS AND OBJECT:
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Student {
+public:
+    string name;
+    int rollNo;
+    float marks;
+
+    // Function to read data
+    void readData() {
+        cout << "Enter name: ";
+        cin >> name;
+        cout << "Enter roll number: ";
+        cin >> rollNo;
+        cout << "Enter marks: ";
+        cin >> marks;
+    }
+
+    // Function to display data
+    void displayData() {
+        cout << "\nStudent Details:" << endl;
+        cout << "Name: " << name << endl;
+        cout << "Roll No: " << rollNo << endl;
+        cout << "Marks: " << marks << endl;
+    }
+};
+
+int main() {
+    Student s;  // Create object of Student class
+
+    s.readData();     // Read student details
+    s.displayData();  // Display student details
+
+    return 0;
+}
