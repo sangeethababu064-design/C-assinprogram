@@ -1,0 +1,39 @@
+FILE HANDLING:
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    string name;
+    int roll;
+    float marks;
+
+    // Write to file
+    ofstream outFile("student.txt");
+
+    cout << "Enter Name: ";
+    cin >> name;
+    cout << "Enter Roll No: ";
+    cin >> roll;
+    cout << "Enter Marks: ";
+    cin >> marks;
+
+    outFile << name << endl;
+    outFile << roll << endl;
+    outFile << marks << endl;
+
+    outFile.close();
+    cout << "\nDetails saved to file!\n" << endl;
+
+    // Read from file
+    ifstream inFile("student.txt");
+
+    cout << "Student Details from file:\n";
+    string line;
+    while (getline(inFile, line)) {
+        cout << line << endl;
+    }
+
+    inFile.close();
+    return 0;
+}
