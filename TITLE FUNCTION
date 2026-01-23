@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+// Function for area of circle
+float areaCircle(float r) {
+    return 3.14 * r * r;
+}
+
+// Function for area of rectangle
+float areaRectangle(float l, float w) {
+    return l * w;
+}
+
+// Function for area of triangle
+float areaTriangle(float b, float h) {
+    return 0.5 * b * h;
+}
+
+int main() {
+    float r, l, w, b, h;
+
+    // Circle
+    cout << "Enter radius of circle: ";
+    cin >> r;
+    cout << "Area of Circle: " << areaCircle(r) << endl;
+
+    // Rectangle
+    cout << "Enter length and width of rectangle: ";
+    cin >> l >> w;
+    cout << "Area of Rectangle: " << areaRectangle(l, w) << endl;
+
+    // Triangle
+    cout << "Enter base and height of triangle: ";
+    cin >> b >> h;
+    cout << "Area of Triangle: " << areaTriangle(b, h) << endl;
+
+    return 0;
+}
