@@ -1,0 +1,19 @@
+TO- DO LIST:
+#include <iostream>
+using namespace std;
+
+int main() {
+    string task1, task2;
+
+    cout << "Enter first task: ";
+    getline(cin, task1);
+
+    cout << "Enter second task: ";
+    getline(cin, task2);
+
+    cout << "\n--- TO DO LIST ---\n";
+    cout << "1. " << task1 << endl;
+    cout << "2. " << task2 << endl;
+
+    return 0;
+}
